@@ -1,0 +1,1274 @@
+```html
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireBot Free Fire - Assistant & Tournois Officiels Guinée 🇬🇳</title>
+    <!-- SEO & Métadonnées Officielles pour tous les sites et moteurs de recherche -->
+    <meta name="description" content="Application officielle FireBot Free Fire Guinée (224). Tournois PRO, classement des meilleurs joueurs, création de clubs officiels, combos de compétences et assistant IA 24/7.">
+    <meta name="keywords" content="Free Fire Guinée, Tournoi Free Fire Conakry, FireBot Guinée, Garena Free Fire 224, eSport Guinée, Squad Free Fire">
+    <meta name="author" content="FireBot Guinée Officiel">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Partage Réseaux Sociaux (WhatsApp, Facebook, TikTok, Discord) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FireBot Free Fire Guinée 🇬🇳 - Tournois & Classement PRO">
+    <meta property="og:description" content="Rejoins la communauté officielle Free Fire en Guinée ! Inscris-toi aux tournois, grimpe dans le classement des meilleurs joueurs et crée ton club officiel.">
+    <meta property="og:site_name" content="FireBot Free Fire Guinée">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FireBot Free Fire Guinée 🇬🇳">
+    <meta name="twitter:description" content="Plateforme officielle des tournois et joueurs Free Fire en Guinée (224).">
+
+    <!-- Données Structurées Officielle Google & Moteurs de Recherche (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FireBot Free Fire Guinée",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "All",
+      "inLanguage": "fr",
+      "areaServed": "GN",
+      "description": "Plateforme officielle de tournois Free Fire en Guinée (224), classement des meilleurs joueurs, création de clubs et assistant IA.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GNF"
+      }
+    }
+    </script>
+
+    <!-- Manifeste PWA -->
+    <link rel="manifest" href="data:application/manifest+json;charset=utf-8,%7B%22name%22%3A%22FireBot%20Free%20Fire%20Guin%C3%A9e%22%2C%22short_name%22%3A%22FireBot%20GN%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%230b0f19%22%2C%22theme_color%22%3A%22%23ff5722%22%7D">
+    <meta name="theme-color" content="#ff5722">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ff-dark': '#0b0f19',
+                        'ff-card': '#131c2e',
+                        'ff-border': '#1e293b',
+                        'ff-orange': '#ff5722',
+                        'ff-orange-hover': '#f4511e',
+                        'ff-yellow': '#ffb300'
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #f8fafc;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0b0f19;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-ff-dark text-slate-100 pb-24">
+
+    <!-- En-tête de l'application -->
+    <header class="sticky top-0 z-30 bg-ff-dark/90 backdrop-blur-md border-b border-ff-border px-4 py-3.5 shadow-lg">
+        <div class="max-w-2xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center shadow-lg shadow-orange-600/20">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="font-display font-extrabold text-base tracking-wide text-white flex items-center gap-1.5">
+                        <span>FireBot Guinée</span>
+                        <span class="text-[10px] bg-ff-orange/20 text-ff-orange px-2 py-0.5 rounded-full font-bold">224 🇬🇳</span>
+                    </h1>
+                    <p class="text-[11px] text-stone-400">Assistant Free Fire & Tournois PRO</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <div class="px-3 py-1.5 bg-stone-900 border border-stone-800 rounded-xl flex items-center gap-1.5 text-xs font-bold text-amber-400">
+                    <span>💳</span>
+                    <span id="header-wallet-balance">50 000 GNF</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteneur principal -->
+    <main class="flex-1 max-w-2xl w-full mx-auto p-4 space-y-4">
+
+        <!-- VUE 1 : ASSISTANT IA CHATBOT -->
+        <section id="view-chat" class="app-view space-y-4">
+            <!-- Carte Profil Free Fire Connecté (Persistant) -->
+            <div id="ff-profile-card" class="bg-gradient-to-br from-ff-card to-stone-900 p-4 rounded-2xl border border-ff-border shadow-xl space-y-3">
+                <div class="flex items-center justify-between">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-ff-orange">Profil Joueur Free Fire 🇬🇳</span>
+                    <button onclick="openModal('modal-profile')" id="profile-action-btn" class="text-[10px] bg-ff-orange/20 text-ff-orange px-2.5 py-1 rounded-lg font-bold hover:bg-ff-orange/30 transition">⚙️ Connecter mon compte</button>
+                </div>
+                <div id="profile-display-content" class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-stone-800 border border-stone-700 flex items-center justify-center text-xl shadow-inner">
+                        👤
+                    </div>
+                    <div>
+                        <h3 id="prof-name" class="font-display font-extrabold text-sm text-white">Aucun compte connecté</h3>
+                        <p id="prof-details" class="text-xs text-stone-400">Associe ton UID pour tes inscriptions aux tournois !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-ff-card to-stone-900 p-4 rounded-2xl border border-ff-border shadow-xl space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-ff-orange">Assistant Virtuel 24/7 (Guinée 224 🇬🇳)</span>
+                    <span class="text-[10px] text-emerald-400 flex items-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Actif & Sécurisé
+                    </span>
+                </div>
+                <h2 class="font-display font-extrabold text-lg text-white">Pose toutes tes questions sur Free Fire !</h2>
+                <p class="text-xs text-stone-400">
+                    Armes, sensibilité, astuces headshot, stratégies de tournoi et validation des mises sur le <strong class="text-white">626483994</strong>.
+                </p>
+                <div class="pt-2 grid grid-cols-2 gap-2">
+                    <button onclick="downloadAppFile()" class="py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md transition">
+                        <span>🔒 Télécharger Code (Créateur)</span>
+                    </button>
+                    <button onclick="openModal('modal-share-official')" class="py-2.5 bg-sky-600 hover:bg-sky-500 text-white font-extrabold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md transition">
+                        <span>🌍 Partager l'Application</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Classement des Meilleurs Joueurs Connectés -->
+            <div class="bg-ff-card p-4 rounded-2xl border border-ff-border shadow-xl space-y-3">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-wider text-amber-400">Top Guinée 🇬🇳</span>
+                        <h3 class="font-display font-extrabold text-sm text-white">🏆 Classement des Meilleurs Joueurs</h3>
+                    </div>
+                    <span class="text-[10px] bg-stone-900 border border-stone-800 px-2.5 py-1 rounded-lg text-stone-300 font-bold" id="leaderboard-count">0 Joueurs</span>
+                </div>
+                <div id="players-leaderboard" class="space-y-2 max-h-60 overflow-y-auto custom-scrollbar">
+                    <!-- Injecté en JS -->
+                </div>
+            </div>
+
+            <!-- Boîte de discussion -->
+            <div id="chat-messages" class="bg-ff-card/50 border border-ff-border rounded-2xl p-4 h-[380px] overflow-y-auto space-y-3.5 custom-scrollbar shadow-inner">
+                <!-- Messages injectés en JS -->
+            </div>
+
+            <!-- Suggestions rapides -->
+            <div class="flex gap-2 overflow-x-auto pb-1 text-xs">
+                <button onclick="sendQuickQuery('Comment participer au tournoi ?')" class="px-3 py-1.5 bg-stone-900 border border-stone-800 text-stone-300 rounded-xl whitespace-nowrap hover:border-ff-orange transition">🏆 Comment s'inscrire ?</button>
+                <button onclick="sendQuickQuery('Quelles sont les meilleures armes en BR ?')" class="px-3 py-1.5 bg-stone-900 border border-stone-800 text-stone-300 rounded-xl whitespace-nowrap hover:border-ff-orange transition">🔫 Meilleures Armes</button>
+                <button onclick="sendQuickQuery('Comment faire des headshots facilement ?')" class="px-3 py-1.5 bg-stone-900 border border-stone-800 text-stone-300 rounded-xl whitespace-nowrap hover:border-ff-orange transition">🎯 Astuces Headshot</button>
+                <button onclick="sendQuickQuery('Comment ouvrir ma chambre de salon ?')" class="px-3 py-1.5 bg-stone-900 border border-stone-800 text-stone-300 rounded-xl whitespace-nowrap hover:border-ff-orange transition">🔑 Accès Chambre</button>
+            </div>
+
+            <!-- Barre de saisie chat -->
+            <div class="flex items-center gap-2 bg-ff-card p-2 rounded-2xl border border-ff-border shadow-lg">
+                <input type="text" id="chat-input" placeholder="Ex: Quelle est la meilleure sensibilité pour placer des têtes ?" 
+                       class="flex-1 bg-transparent px-3 py-2 text-xs text-white placeholder-stone-500 outline-none"
+                       onkeypress="if(event.key === 'Enter') sendChatMessage()">
+                <button onclick="sendChatMessage()" class="p-2.5 bg-ff-orange hover:bg-ff-orange-hover text-white rounded-xl shadow-md transition active:scale-95">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- VUE 2 : SQUADS & RECRUTEMENT -->
+        <section id="view-squads" class="app-view hidden space-y-4">
+            <div class="bg-ff-card p-4 rounded-2xl border border-ff-border shadow-xl space-y-3">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-wider text-ff-orange">Communauté Guinée</span>
+                        <h2 class="font-display font-extrabold text-lg text-white">Recrutement & Squads Officielles</h2>
+                    </div>
+                    <button onclick="openModal('modal-create-guild')" class="px-3 py-2 bg-ff-orange hover:bg-ff-orange-hover text-white font-extrabold text-xs rounded-xl shadow-md transition flex items-center gap-1.5">
+                        <span>🛡️ Créer Club Officiel (3 000 GNF)</span>
+                    </button>
+                </div>
+                <p class="text-xs text-stone-400">
+                    Rejoins les meilleures guildes guinéennes par région ou crée ton club officiel (frais d'enregistrement unique de 3 000 GNF sur le <strong>626483994</strong>).
+                </p>
+            </div>
+
+            <div id="squads-list" class="space-y-3">
+                <!-- Injecté en JS -->
+            </div>
+        </section>
+
+        <!-- VUE 3 : COMBOS DE COMPÉTENCES -->
+        <section id="view-combos" class="app-view hidden space-y-4">
+            <div class="bg-ff-card p-4 rounded-2xl border border-ff-border shadow-xl space-y-2">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider text-ff-orange">Meta Stratégique</span>
+                <h2 class="font-display font-extrabold text-lg text-white">Combos de Compétences PRO</h2>
+                <p class="text-xs text-stone-400">
+                    Optimise ton personnage avec les meilleurs mix de compétences Actives et Passives.
+                </p>
+            </div>
+
+            <div class="flex gap-2 overflow-x-auto pb-1 text-xs">
+                <button onclick="filterCombos('all')" class="combo-tab px-3 py-1.5 rounded-xl font-bold bg-ff-orange text-white shrink-0">Tous</button>
+                <button onclick="filterCombos('rush')" class="combo-tab px-3 py-1.5 rounded-xl font-semibold bg-stone-900 border border-stone-800 text-stone-300 shrink-0">Rush ⚡</button>
+                <button onclick="filterCombos('support')" class="combo-tab px-3 py-1.5 rounded-xl font-semibold bg-stone-900 border border-stone-800 text-stone-300 shrink-0">Support 🛡️</button>
+                <button onclick="filterCombos('survie')" class="combo-tab px-3 py-1.5 rounded-xl font-semibold bg-stone-900 border border-stone-800 text-stone-300 shrink-0">Survie 🌲</button>
+            </div>
+
+            <div id="combos-list" class="space-y-3">
+                <!-- Injecté en JS -->
+            </div>
+        </section>
+
+        <!-- VUE 4 : TOURNOIS & SALONS -->
+        <section id="view-tournaments" class="app-view hidden space-y-4">
+            <div class="bg-ff-card p-4 rounded-2xl border border-ff-border shadow-xl space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-ff-yellow">Tournois Guinéens 🇬🇳</span>
+                    <span class="text-[10px] bg-stone-900 border border-stone-800 px-2.5 py-1 rounded-lg text-stone-300 font-bold">Paiement unique : 626483994</span>
+                </div>
+                <h2 class="font-display font-extrabold text-lg text-white">Salons & Tournois en Direct</h2>
+                <p class="text-xs text-stone-400">
+                    Maximum <strong>1 500 joueurs</strong> par tournoi. Dès que le quota est atteint, les inscriptions se ferment et le match commence ! Chambres accessibles uniquement pour les inscrits validés.
+                </p>
+            </div>
+
+            <div id="tournaments-list" class="space-y-3.5">
+                <!-- Injecté en JS -->
+            </div>
+        </section>
+
+        <!-- VUE : MATCHS DU JOUR & AFFICHES -->
+        <section id="view-matches" class="app-view hidden space-y-4">
+            <div class="bg-ff-card p-4 rounded-2xl border border-ff-border shadow-xl space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-ff-orange">Programme Quotidien 🇬🇳</span>
+                    <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-bold animate-pulse">En Direct 🟢</span>
+                </div>
+                <h2 class="font-display font-extrabold text-lg text-white">Matchs du Jour & Affiches Officielles</h2>
+                <p class="text-xs text-stone-400">
+                    Découvre les affiches graphiques des confrontations du jour, les horaires et les squads en lice en Guinée.
+                </p>
+            </div>
+
+            <div id="daily-matches-list" class="space-y-4">
+                <!-- Injecté en JS -->
+            </div>
+        </section>
+
+        <!-- VUE 5 : GAGNANTS & JOURNAL (CRÉATEUR UNIQUEMENT) -->
+        <section id="view-winners" class="app-view hidden space-y-4">
+            <div class="bg-ff-card p-4 rounded-2xl border border-ff-border shadow-xl space-y-3">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-wider text-amber-400">Espace Privé Créateur / Admin</span>
+                        <h2 class="font-display font-extrabold text-xl text-white">Équipe Gagnante & Paiement des Gains</h2>
+                    </div>
+                    <button onclick="lockCreatorSession()" class="px-2.5 py-1 bg-red-500/20 text-red-400 font-bold text-xs rounded-lg">Verrouiller 🔒</button>
+                </div>
+                <p class="text-xs text-stone-400 leading-relaxed">
+                    Espace strictement réservé au créateur pour gérer les vainqueurs et suivre les transactions sur le numéro officiel <strong>626483994</strong>.
+                </p>
+            </div>
+
+            <div class="bg-ff-card p-4 rounded-2xl border border-ff-border shadow-xl space-y-3">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-display font-extrabold text-sm text-white flex items-center gap-2">
+                        <span>📊 Journal des Dépôts & Retraits (626483994)</span>
+                    </h3>
+                    <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-bold">Sécurisé 🟢</span>
+                </div>
+                <div id="transactions-ledger" class="space-y-2 pt-1">
+                    <!-- Injecté en JS -->
+                </div>
+            </div>
+
+            <div id="winners-list" class="space-y-3.5">
+                <!-- Injecté en JS -->
+            </div>
+
+            <div class="bg-stone-900 border border-stone-800 p-4 rounded-2xl space-y-3">
+                <h3 class="font-display font-extrabold text-sm text-white flex items-center gap-2">
+                    <span>🛡️ Déclarer un Vainqueur (Créateur)</span>
+                </h3>
+                <form onsubmit="handleDeclareWinner(event)" class="space-y-3">
+                    <div>
+                        <label class="block text-xs font-bold text-stone-300 mb-1">Nom du Tournoi *</label>
+                        <input type="text" id="win-tourney" required placeholder="Ex: Grand Tournoi National Conakry" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-xs text-white outline-none focus:border-amber-400">
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-xs font-bold text-stone-300 mb-1">Squad Gagnante *</label>
+                            <input type="text" id="win-squad" required placeholder="Ex: KALOUM ELITE" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-xs text-white outline-none focus:border-amber-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-stone-300 mb-1">Montant du Gain (GNF) *</label>
+                            <input type="text" id="win-amount" required placeholder="Ex: 1 500 000 GNF" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-xs text-white outline-none focus:border-amber-400">
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-stone-950 font-extrabold rounded-xl text-xs shadow-md active:scale-95">
+                        🏆 Enregistrer & Débloquer le Versement (626483994)
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- BARRE DE NAVIGATION INFÉRIEURE MOBILE -->
+    <nav class="fixed bottom-0 left-0 right-0 z-40 bg-ff-dark/95 backdrop-blur-md border-t border-ff-border shadow-[0_-4px_16px_rgba(0,0,0,0.3)]">
+        <div id="nav-container" class="max-w-2xl mx-auto grid grid-cols-5 h-16">
+            <button onclick="switchTab('chat')" data-tab="chat" class="nav-btn active flex flex-col items-center justify-center gap-1 text-ff-orange font-extrabold transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+                <span class="text-[10px]">Assistant</span>
+            </button>
+
+            <button onclick="switchTab('squads')" data-tab="squads" class="nav-btn flex flex-col items-center justify-center gap-1 text-stone-400 font-semibold transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="text-[10px]">Squads</span>
+            </button>
+
+            <button onclick="switchTab('matches')" data-tab="matches" class="nav-btn flex flex-col items-center justify-center gap-1 text-stone-400 font-semibold transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="text-[10px]">Affiches</span>
+            </button>
+
+            <button onclick="switchTab('combos')" data-tab="combos" class="nav-btn flex flex-col items-center justify-center gap-1 text-stone-400 font-semibold transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <span class="text-[10px]">Combos</span>
+            </button>
+
+            <button onclick="switchTab('tournaments')" data-tab="tournaments" class="nav-btn flex flex-col items-center justify-center gap-1 text-stone-400 font-semibold transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-[10px]">Tournois</span>
+            </button>
+        </div>
+        
+        <!-- Accès Créateur discret -->
+        <div class="text-center bg-stone-950 py-1.5 text-[10px] text-stone-400 border-t border-ff-border flex items-center justify-center gap-2">
+            <span>Espace Client Public • </span>
+            <button onclick="openModal('modal-creator-pin')" class="text-ff-orange font-extrabold underline hover:text-white px-2 py-0.5 bg-ff-orange/10 rounded-lg">Accès Créateur 🔒</button>
+        </div>
+    </nav>
+
+    <!-- MODALE PAIEMENT ET INSCRIPTION -->
+    <div id="modal-payment" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-ff-card border border-ff-border w-full max-w-md rounded-3xl p-5 space-y-4 shadow-2xl">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-extrabold text-base text-white">🔒 Paiement Sécurisé Inscription</h3>
+                <button onclick="closeModal('modal-payment')" class="text-stone-400 hover:text-white p-1">✕</button>
+            </div>
+            <div class="bg-stone-900 border border-stone-800 p-3.5 rounded-2xl space-y-2 text-xs">
+                <div class="flex justify-between">
+                    <span class="text-stone-400">Tournoi :</span>
+                    <span id="pay-modal-title" class="font-bold text-white">Grand Tournoi National</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-stone-400">Mise requise :</span>
+                    <span id="pay-modal-amount" class="font-bold text-amber-400">50 000 GNF</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-stone-400">Numéro officiel :</span>
+                    <span class="font-mono font-bold text-ff-orange select-all">626483994</span>
+                </div>
+            </div>
+            <div class="space-y-3 text-xs">
+                <p class="text-stone-300">Effectuez le transfert de la mise sur le <strong>626483994</strong> puis entrez votre ID de transaction SMS :</p>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">Votre Pseudo Free Fire *</label>
+                    <input type="text" id="pay-ign" placeholder="Ex: SYLI_PRO_994" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">Code / ID de Transaction SMS *</label>
+                    <input type="text" id="pay-txid" placeholder="Ex: TX-99482103" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+            </div>
+            <div class="flex gap-2 pt-2">
+                <button onclick="closeModal('modal-payment')" class="flex-1 py-3 bg-stone-800 hover:bg-stone-700 font-bold text-xs rounded-xl text-stone-300">Annuler</button>
+                <button onclick="confirmTournamentPayment()" class="flex-1 py-3 bg-ff-orange hover:bg-ff-orange-hover font-extrabold text-xs rounded-xl text-white">Valider l'Inscription 🟢</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE CODE PIN CRÉATEUR -->
+    <div id="modal-creator-pin" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-ff-card border border-ff-border w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-extrabold text-base text-white">🔒 Accès Créateur Protégé</h3>
+                <button onclick="closeModal('modal-creator-pin')" class="text-stone-400 hover:text-white p-1">✕</button>
+            </div>
+            <p class="text-xs text-stone-400">Entrez le code secret pour débloquer la gestion des gagnants, le journal des paiements et le code source.</p>
+            <input type="password" id="creator-pin-input" placeholder="Code PIN Créateur..." onkeypress="if(event.key === 'Enter') submitCreatorPin()" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white text-center tracking-widest font-mono outline-none focus:border-ff-orange">
+            <div class="flex gap-2">
+                <button onclick="closeModal('modal-creator-pin')" class="flex-1 py-2.5 bg-stone-800 hover:bg-stone-700 font-bold text-xs rounded-xl text-stone-300">Annuler</button>
+                <button onclick="submitCreatorPin()" class="flex-1 py-2.5 bg-ff-orange hover:bg-ff-orange-hover font-extrabold text-xs rounded-xl text-white">Déverrouiller 🔓</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE SALON & CHAMBRE -->
+    <div id="modal-room" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-ff-card border border-ff-border w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl text-center">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-extrabold text-base text-white">🔑 Accès Salon VIP</h3>
+                <button onclick="closeModal('modal-room')" class="text-stone-400 hover:text-white p-1">✕</button>
+            </div>
+            <div class="bg-stone-900 border border-stone-800 p-4 rounded-2xl space-y-2">
+                <p class="text-xs text-stone-400">ID de Salon :</p>
+                <p id="room-display-id" class="font-mono font-bold text-amber-400 text-lg select-all">FF-GN-99481</p>
+                <p class="text-xs text-stone-400 pt-1">Mot de passe :</p>
+                <p id="room-display-pass" class="font-mono font-bold text-ff-orange text-lg select-all">GUINEE2026</p>
+            </div>
+            <button onclick="copyRoomInfo()" class="w-full py-3 bg-ff-orange hover:bg-ff-orange-hover text-white font-extrabold text-xs rounded-xl shadow">Copier les Accès 📋</button>
+        </div>
+    </div>
+
+    <!-- MODALE PARTAGE & PUBLICATION OFFICIELLE MULTI-SITES -->
+    <div id="modal-share-official" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-ff-card border border-ff-border w-full max-w-md rounded-3xl p-5 space-y-4 shadow-2xl max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-extrabold text-base text-white">🌍 Partager FireBot Guinée</h3>
+                <button onclick="closeModal('modal-share-official')" class="text-stone-400 hover:text-white p-1">✕</button>
+            </div>
+            <p class="text-xs text-stone-300 leading-relaxed">
+                Partage l'invitation officielle sur tous tes réseaux sociaux ou indique l'adresse de ton site hébergé :
+            </p>
+            <div class="space-y-1.5 text-xs">
+                <label class="block font-bold text-stone-300">Lien public de l'application (optionnel) :</label>
+                <div class="flex gap-2">
+                    <input type="url" id="custom-share-url" oninput="updateShareTargetUrl(this.value)" placeholder="Ex: https://firebot-guinee.netlify.app" class="flex-1 px-3 py-2 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange text-xs">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2.5 text-xs">
+                <a id="share-wa-link" href="#" target="_blank" class="py-2.5 px-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition">
+                    <span>💬 WhatsApp</span>
+                </a>
+                <a id="share-fb-link" href="#" target="_blank" class="py-2.5 px-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition">
+                    <span>📘 Facebook</span>
+                </a>
+                <a id="share-tg-link" href="#" target="_blank" class="py-2.5 px-3 bg-sky-500 hover:bg-sky-400 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition">
+                    <span>✈️ Telegram</span>
+                </a>
+                <a id="share-x-link" href="#" target="_blank" class="py-2.5 px-3 bg-stone-800 hover:bg-stone-700 border border-stone-600 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition">
+                    <span>🐦 X / Twitter</span>
+                </a>
+                <button onclick="nativeUniversalShare()" class="py-2.5 px-3 bg-ff-orange hover:bg-ff-orange-hover text-white font-bold rounded-xl flex items-center justify-center gap-2 transition">
+                    <span>📲 TikTok / Discord</span>
+                </button>
+                <button onclick="copyOfficialSiteLink()" class="py-2.5 px-3 bg-stone-900 hover:bg-stone-800 border border-amber-500/40 text-amber-400 font-bold rounded-xl flex items-center justify-center gap-2 transition">
+                    <span>📋 Copier Invitation</span>
+                </button>
+            </div>
+
+            <!-- Code d'intégration universel pour n'importe quel site web (Créateur uniquement) -->
+            <div id="creator-only-embed-box" class="hidden bg-stone-950 border border-amber-500/40 p-3 rounded-2xl space-y-2 text-[11px]">
+                <div class="flex items-center justify-between">
+                    <span class="font-bold text-amber-400">🔐 Intégrer sur un site web (Créateur) :</span>
+                    <button onclick="copyEmbedCode()" class="text-[10px] bg-ff-orange/20 text-ff-orange px-2 py-0.5 rounded font-bold hover:bg-ff-orange/30 transition">Copier le code</button>
+                </div>
+                <textarea id="embed-iframe-code" readonly rows="2" class="w-full bg-stone-900 border border-stone-800 rounded-xl p-2 font-mono text-[10px] text-stone-300 outline-none resize-none"></textarea>
+            </div>
+
+            <div class="bg-stone-900 border border-stone-800 p-3 rounded-2xl space-y-1.5 text-[11px] text-stone-400">
+                <div class="font-bold text-white">💡 Comment obtenir ton propre lien web ?</div>
+                <p>En tant que Créateur, télécharge le fichier via <strong>« 🔒 Télécharger Code »</strong> puis glisse-le gratuitement sur <strong>app.netlify.com/drop</strong> pour avoir un lien <code>https://...</code> partageable partout !</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE CONNEXION COMPTE FREE FIRE -->
+    <div id="modal-profile" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-ff-card border border-ff-border w-full max-w-md rounded-3xl p-5 space-y-4 shadow-2xl">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-extrabold text-base text-white">🎮 Connecter mon Compte Free Fire</h3>
+                <button onclick="closeModal('modal-profile')" class="text-stone-400 hover:text-white p-1">✕</button>
+            </div>
+            <p class="text-xs text-stone-400">Enregistre ton profil pour le retrouver à chaque visite et pré-remplir tes inscriptions de tournoi.</p>
+            <form onsubmit="handleSaveProfile(event)" class="space-y-3 text-xs">
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">Pseudo Free Fire (IGN) *</label>
+                    <input type="text" id="input-ign" required placeholder="Ex: SYLI_PRO_GN" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">UID Free Fire *</label>
+                    <input type="text" id="input-uid" required placeholder="Ex: 1234567890" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-bold text-stone-300 mb-1">Région / Ville</label>
+                        <input type="text" id="input-region" placeholder="Ex: Conakry" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-stone-300 mb-1">Rang / Niveau *</label>
+                        <select id="input-rank" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                            <option value="Grand Maître" data-pts="5000">Grand Maître (5000 pts)</option>
+                            <option value="Maître" data-pts="4000">Maître (4000 pts)</option>
+                            <option value="Héroïque" data-pts="3200" selected>Héroïque (3200 pts)</option>
+                            <option value="Diamant" data-pts="2500">Diamant (2500 pts)</option>
+                            <option value="Platine" data-pts="1800">Platine (1800 pts)</option>
+                            <option value="Or" data-pts="1200">Or (1200 pts)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex gap-2 pt-2">
+                    <button type="button" onclick="closeModal('modal-profile')" class="flex-1 py-3 bg-stone-800 hover:bg-stone-700 font-bold rounded-xl text-stone-300">Annuler</button>
+                    <button type="submit" class="flex-1 py-3 bg-ff-orange hover:bg-ff-orange-hover font-extrabold rounded-xl text-white">Enregistrer & Classer 🏆</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODALE CRÉATION DE CLUB / GUILDE OFFICIEL -->
+    <div id="modal-create-guild" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-ff-card border border-ff-border w-full max-w-md rounded-3xl p-5 space-y-4 shadow-2xl">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-extrabold text-base text-white">🛡️ Création Club Officiel (3 000 GNF)</h3>
+                <button onclick="closeModal('modal-create-guild')" class="text-stone-400 hover:text-white p-1">✕</button>
+            </div>
+            <div class="bg-stone-900 border border-stone-800 p-3.5 rounded-2xl space-y-1.5 text-xs">
+                <div class="flex justify-between">
+                    <span class="text-stone-400">Frais d'officialisation :</span>
+                    <span class="font-bold text-amber-400">3 000 GNF</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-stone-400">Numéro de paiement :</span>
+                    <span class="font-mono font-bold text-ff-orange select-all">626483994</span>
+                </div>
+            </div>
+            <form onsubmit="handleCreateGuild(event)" class="space-y-3 text-xs">
+                <p class="text-stone-300">Transférez <strong>3 000 GNF</strong> sur le 626483994 puis remplissez les informations de votre club :</p>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">Nom du Club / Guilde *</label>
+                    <input type="text" id="guild-name" required placeholder="Ex: KALOUM WARRIORS 🇬🇳" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">Région / Ville en Guinée *</label>
+                    <input type="text" id="guild-region" required placeholder="Ex: Conakry / Dixinn" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">Nom du Leader / Capitaine *</label>
+                    <input type="text" id="guild-leader" required placeholder="Ex: Alpha 994" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">Numéro WhatsApp de Contact *</label>
+                    <input type="text" id="guild-contact" required placeholder="Ex: +224626483994" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div>
+                    <label class="block font-bold text-stone-300 mb-1">ID / Code Transaction SMS (3 000 GNF) *</label>
+                    <input type="text" id="guild-txid" required placeholder="Ex: TX-CLUB-994" class="w-full px-3.5 py-2.5 bg-stone-950 border border-stone-700 rounded-xl text-white outline-none focus:border-ff-orange">
+                </div>
+                <div class="flex gap-2 pt-2">
+                    <button type="button" onclick="closeModal('modal-create-guild')" class="flex-1 py-3 bg-stone-800 hover:bg-stone-700 font-bold rounded-xl text-stone-300">Annuler</button>
+                    <button type="submit" class="flex-1 py-3 bg-ff-orange hover:bg-ff-orange-hover font-extrabold rounded-xl text-white">Valider & Ajouter 🚀</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 bg-stone-900 border border-ff-orange text-white px-4 py-2.5 rounded-2xl shadow-2xl text-xs font-bold flex items-center gap-2.5 transition-all duration-300 opacity-0 pointer-events-none">
+        <span class="text-ff-orange text-sm">🔥</span>
+        <span id="toast-msg">Action effectuée avec succès !</span>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        const STORAGE_KEY = 'firebot_guinee_store_v12';
+        let appData = {
+            wallet: 50000,
+            chatMessages: [
+                { sender: 'bot', text: 'Salam 🇬🇳 ! Bienvenue sur FireBot Guinée. Je suis ton assistant personnel prêt à répondre à TOUTES tes questions sur Free Fire et nos tournois officiels sur le 626483994. Que veux-tu savoir ?' }
+            ],
+            squads: [
+                { id: 1, name: 'KALOUM ELITE 🇬🇳', region: 'Conakry', leader: 'Alpha 994', slots: '4/4 (Complet)', contact: '+224626483994' },
+                { id: 2, name: 'LABE WARRIORS', region: 'Moyenne Guinée', leader: 'Ibrahima FF', slots: '3/4 (1 place)', contact: '+224626483994' },
+                { id: 3, name: 'KANKAN PRO SQUAD', region: 'Haute Guinée', leader: 'Mamadou 224', slots: '2/4 (2 places)', contact: '+224626483994' },
+                { id: 4, name: 'KINDIA VIP', region: 'Basse Guinée', leader: 'Sekou Sniper', slots: '4/4 (Complet)', contact: '+224626483994' }
+            ],
+            dailyMatches: [
+                { id: 1, title: 'Grand Choc Conakry Derby ⚡', time: 'Ce soir à 20h00', teams: 'KALOUM ELITE vs KINDIA VIP', prize: '1 500 000 GNF', posterBg: 'from-orange-600 via-stone-900 to-amber-700', status: 'En préparation 🟢' },
+                { id: 2, title: 'Bataille des Régions - Quart de Finale 🏆', time: 'Demain à 16h00', teams: 'LABE WARRIORS vs KANKAN PRO SQUAD', prize: '800 000 GNF', posterBg: 'from-sky-700 via-stone-900 to-emerald-800', status: 'Ouvert 🟢' }
+            ],
+            combos: [
+                { id: 1, title: 'Combo Rush Ultime (Conakry Meta)', category: 'rush', active: 'Alok (Soin & Vitesse)', passives: ['Jota (PV par kill)', 'Kelly (Vitesse de course)', 'Hayato (Pénétration armure)'], desc: 'Le combo le plus redoutable pour rusher en Clash Squad ou en BR classé.' },
+                { id: 2, title: 'Combo Support Stratège', category: 'support', active: 'Chrono (Bouclier Énergétique)', passives: ['Moco (Marquage ennemi)', 'Kapella (Boost de soin)', 'Maxim (Vitesse de champignons)'], desc: 'Idéal pour protéger les coéquipiers et assurer les tirs de couverture.' },
+                { id: 3, title: 'Combo Survie & Top 1', category: 'survie', active: 'K (Maître de l EP)', passives: ['Wolfrahh (Dégâts headshot)', 'Antonio (PV bonus départ)', 'Notora (Soin en véhicule)'], desc: 'Garantit une régénération constante en zone de tempête.' }
+            ],
+            tournaments: [
+                { id: 1, title: 'Grand Tournoi National Guinée 🏆', prize: '1 500 000 GNF', fee: '50 000 GNF', maxPlayers: 1500, registeredCount: 1420, status: 'Inscriptions ouvertes 🟢', room: { id: 'FF-GN-99481', pass: 'GUINEE2026' } },
+                { id: 2, title: 'Tournoi Clash Squad Conakry ⚡', prize: '800 000 GNF', fee: '25 000 GNF', maxPlayers: 1500, registeredCount: 890, status: 'Inscriptions ouvertes 🟢', room: { id: 'CS-KRY-332', pass: 'KALOU224' } }
+            ]
+        };
+
+        let winnersStore = [{ id: 1, tourney: 'Grand Tournoi National Guinée', squad: 'KALOUM ELITE', amount: '1 500 000 GNF', status: 'Payé via 626483994 🟢' }];
+        let transactionsLedger = [{ id: 'TX-GUINEE-8839', type: 'DÉPÔT', amount: '50 000 GNF', user: 'SYLI_PRO_994', status: 'Vérifié (626483994) 🟢', time: 'Il y a 15 min' }];
+        let userProfile = { connected: false, ign: '', uid: '', region: '', rank: '', points: 0 };
+        let playersLeaderboard = [
+            { ign: 'ALPHA_994_GN', uid: '198472610', region: 'Conakry', rank: 'Grand Maître', points: 5250 },
+            { ign: 'SYLI_SNIPER', uid: '284719204', region: 'Labé', rank: 'Maître', points: 4300 },
+            { ign: 'KANKAN_KING', uid: '391048271', region: 'Kankan', rank: 'Héroïque', points: 3450 }
+        ];
+        let activeTourneyId = null;
+        let isCreatorMode = false;
+        let currentRoomData = { id: '', pass: '' };
+
+        function loadAppData() {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) {
+                try {
+                    const parsed = JSON.parse(saved);
+                    appData = parsed.appData || appData;
+                    winnersStore = parsed.winnersStore || winnersStore;
+                    transactionsLedger = parsed.transactionsLedger || transactionsLedger;
+                    userProfile = parsed.userProfile || userProfile;
+                    playersLeaderboard = parsed.playersLeaderboard || playersLeaderboard;
+                } catch(e) {}
+            }
+        }
+
+        function saveAppData() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({ appData, winnersStore, transactionsLedger, userProfile, playersLeaderboard }));
+        }
+
+        function renderProfileCard() {
+            const nameEl = document.getElementById('prof-name');
+            const detailsEl = document.getElementById('prof-details');
+            const btnEl = document.getElementById('profile-action-btn');
+            if (!nameEl || !detailsEl) return;
+
+            if (userProfile && userProfile.connected) {
+                nameEl.innerHTML = `${escapeHtml(userProfile.ign)} <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full ml-1">Connecté 🟢</span>`;
+                detailsEl.innerHTML = `UID: <span class="font-mono text-amber-400 font-bold">${escapeHtml(userProfile.uid)}</span> • ${escapeHtml(userProfile.region || 'Guinée')} • <span class="text-ff-orange font-bold">${escapeHtml(userProfile.rank)} (${userProfile.points} pts)</span>`;
+                if (btnEl) btnEl.innerText = '✏️ Modifier';
+                const payIgn = document.getElementById('pay-ign');
+                if (payIgn && !payIgn.value) payIgn.value = userProfile.ign;
+            }
+        }
+
+        function renderLeaderboard() {
+            const container = document.getElementById('players-leaderboard');
+            const countEl = document.getElementById('leaderboard-count');
+            if (!container) return;
+
+            const sorted = [...playersLeaderboard].sort((a, b) => b.points - a.points);
+            if (countEl) countEl.innerText = `${sorted.length} Joueurs`;
+
+            container.innerHTML = sorted.map((p, idx) => {
+                const medal = idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : `#${idx + 1}`;
+                const isCurrent = userProfile.connected && userProfile.uid === p.uid;
+                return `
+                    <div class="p-2.5 rounded-xl border ${isCurrent ? 'bg-ff-orange/15 border-ff-orange' : 'bg-stone-950 border-stone-800'} flex items-center justify-between text-xs">
+                        <div class="flex items-center gap-2.5">
+                            <span class="font-extrabold text-sm w-6 text-center">${medal}</span>
+                            <div>
+                                <div class="font-bold text-white flex items-center gap-1.5">
+                                    <span>${escapeHtml(p.ign)}</span>
+                                    ${isCurrent ? '<span class="text-[9px] bg-ff-orange text-white px-1.5 py-0.2 rounded font-extrabold">TOI</span>' : ''}
+                                </div>
+                                <div class="text-[10px] text-stone-400">UID: ${escapeHtml(p.uid)} • ${escapeHtml(p.region || 'Guinée')}</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-extrabold text-amber-400">${p.points} pts</div>
+                            <div class="text-[10px] text-ff-orange font-semibold">${escapeHtml(p.rank)}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function handleSaveProfile(e) {
+            e.preventDefault();
+            const ign = document.getElementById('input-ign').value.trim();
+            const uid = document.getElementById('input-uid').value.trim();
+            const region = document.getElementById('input-region').value.trim() || 'Conakry';
+            const rankSelect = document.getElementById('input-rank');
+            const rank = rankSelect.value;
+            const basePts = parseInt(rankSelect.options[rankSelect.selectedIndex].getAttribute('data-pts') || '2000', 10);
+
+            if (!ign || !uid) return;
+
+            userProfile = { connected: true, ign, uid, region, rank, points: basePts };
+
+            const existingIdx = playersLeaderboard.findIndex(p => p.uid === uid);
+            if (existingIdx >= 0) {
+                playersLeaderboard[existingIdx] = { ign, uid, region, rank, points: Math.max(playersLeaderboard[existingIdx].points, basePts) };
+            } else {
+                playersLeaderboard.push({ ign, uid, region, rank, points: basePts });
+            }
+
+            saveAppData();
+            renderProfileCard();
+            renderLeaderboard();
+            closeModal('modal-profile');
+            showToast(`🏆 ${ign} ajouté au classement (${rank}) !`);
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.app-view').forEach(el => el.classList.add('hidden'));
+            const target = document.getElementById('view-' + tabId);
+            if (target) target.classList.remove('hidden');
+
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.className = 'nav-btn flex flex-col items-center justify-center gap-1 text-stone-400 font-semibold transition';
+            });
+            const activeBtn = document.querySelector(`[data-tab="${tabId}"]`);
+            if (activeBtn) {
+                activeBtn.className = 'nav-btn flex flex-col items-center justify-center gap-1 text-ff-orange font-extrabold transition';
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function submitCreatorPin() {
+            const input = document.getElementById('creator-pin-input');
+            if (!input) return;
+            const pin = input.value.trim();
+            if (pin === "994") {
+                isCreatorMode = true;
+                closeModal('modal-creator-pin');
+                input.value = '';
+                showToast("🔓 Accès Créateur autorisé !");
+                
+                const navContainer = document.getElementById('nav-container');
+                if (navContainer && !document.querySelector('[data-tab="winners"]')) {
+                    navContainer.className = "max-w-2xl mx-auto grid grid-cols-6 h-16";
+                    const btn = document.createElement('button');
+                    btn.onclick = () => switchTab('winners');
+                    btn.setAttribute('data-tab', 'winners');
+                    btn.className = "nav-btn flex flex-col items-center justify-center gap-1 text-amber-400 font-extrabold transition";
+                    btn.innerHTML = `<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg><span class="text-[10px]">Gagnants</span>`;
+                    navContainer.appendChild(btn);
+                }
+                switchTab('winners');
+                renderWinners();
+                updateCreatorProtectionUI();
+            } else {
+                showToast("❌ Code PIN incorrect (Accès refusé).");
+            }
+        }
+
+        function lockCreatorSession() {
+            isCreatorMode = false;
+            const btn = document.querySelector('[data-tab="winners"]');
+            if (btn) btn.remove();
+            const navContainer = document.getElementById('nav-container');
+            if (navContainer) navContainer.className = "max-w-2xl mx-auto grid grid-cols-5 h-16";
+            switchTab('chat');
+            updateCreatorProtectionUI();
+            showToast("🔒 Session Créateur verrouillée.");
+        }
+
+        function updateCreatorProtectionUI() {
+            const embedBox = document.getElementById('creator-only-embed-box');
+            if (embedBox) {
+                if (isCreatorMode) {
+                    embedBox.classList.remove('hidden');
+                } else {
+                    embedBox.classList.add('hidden');
+                }
+            }
+        }
+
+        function openModal(id) { document.getElementById(id)?.classList.remove('hidden'); }
+        function closeModal(id) { document.getElementById(id)?.classList.add('hidden'); }
+
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            const m = document.getElementById('toast-msg');
+            if (!t || !m) return;
+            m.innerText = msg;
+            t.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => t.classList.add('opacity-0', 'pointer-events-none'), 3000);
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+
+        function renderChat() {
+            const container = document.getElementById('chat-messages');
+            if (!container) return;
+            container.innerHTML = appData.chatMessages.map(m => `
+                <div class="flex ${m.sender === 'user' ? 'justify-end' : 'justify-start'}">
+                    <div class="max-w-[85%] p-3 rounded-2xl text-xs leading-relaxed ${m.sender === 'user' ? 'bg-ff-orange text-white rounded-br-none shadow-md font-medium' : 'bg-stone-900 border border-stone-800 text-stone-200 rounded-bl-none shadow'}">
+                        ${m.text}
+                    </div>
+                </div>
+            `).join('');
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chat-input');
+            if (!input || !input.value.trim()) return;
+            const text = input.value.trim();
+            appData.chatMessages.push({ sender: 'user', text });
+            input.value = '';
+            renderChat();
+
+            setTimeout(() => {
+                let reply = "Salam l'ami ! 🇬🇳 Je réponds à tout sur Free Fire et nos tournois officiels sur le **626483994** !";
+                const lower = text.toLowerCase();
+                if (lower.includes('tournoi') || lower.includes('match') || lower.includes('1500')) {
+                    reply = "🏆 Nos tournois acceptent **1 500 joueurs max**. Paiement sur le **626483994**.";
+                } else if (lower.includes('chambre') || lower.includes('salon')) {
+                    reply = "🔑 Les salons sont réservés aux inscrits validés.";
+                } else if (lower.includes('paiement') || lower.includes('626483994')) {
+                    reply = "💳 Tout se passe sur le **626483994** (Orange Money / MoMo).";
+                } else if (lower.includes('arme') || lower.includes('mp40')) {
+                    reply = "🔫 Privilégie la **M1887** ou la **MP40** en rush.";
+                } else if (lower.includes('tete') || lower.includes('headshot')) {
+                    reply = "🎯 Sensibilité Générale : 98, Red Dot : 94.";
+                }
+                appData.chatMessages.push({ sender: 'bot', text: reply });
+                saveAppData();
+                renderChat();
+            }, 500);
+        }
+
+        function sendQuickQuery(q) {
+            const input = document.getElementById('chat-input');
+            if (input) { input.value = q; sendChatMessage(); }
+        }
+
+        function renderSquads() {
+            const container = document.getElementById('squads-list');
+            if (!container) return;
+            container.innerHTML = appData.squads.map(s => `
+                <div class="bg-ff-card p-4 rounded-2xl border border-ff-border flex items-center justify-between gap-3 shadow-md">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <h3 class="font-display font-extrabold text-sm text-white">${escapeHtml(s.name)}</h3>
+                            <span class="text-[10px] bg-stone-900 border border-stone-800 px-2 py-0.5 rounded text-stone-300">${escapeHtml(s.region)}</span>
+                        </div>
+                        <p class="text-xs text-stone-400">Capitaine : <span class="text-stone-200 font-semibold">${escapeHtml(s.leader)}</span> • Places : <span class="text-amber-400 font-bold">${escapeHtml(s.slots)}</span></p>
+                    </div>
+                    <a href="https://wa.me/${s.contact.replace(/[^0-9]/g, '')}?text=Salut%20${encodeURIComponent(s.leader)},%20je%20veux%20rejoindre%20ta%20squad!" target="_blank" 
+                       class="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow transition shrink-0">WhatsApp 💬</a>
+                </div>
+            `).join('');
+        }
+
+        function handleCreateGuild(e) {
+            e.preventDefault();
+            const name = document.getElementById('guild-name').value.trim();
+            const region = document.getElementById('guild-region').value.trim();
+            const leader = document.getElementById('guild-leader').value.trim();
+            const contact = document.getElementById('guild-contact').value.trim();
+            const txid = document.getElementById('guild-txid').value.trim();
+
+            if (!name || !region || !leader || !contact || !txid) {
+                showToast("⚠️ Remplissez tous les champs.");
+                return;
+            }
+
+            if (transactionsLedger.some(tx => tx.id.toLowerCase() === txid.toLowerCase())) {
+                showToast("🚨 ID de transaction déjà utilisé !");
+                return;
+            }
+
+            const newGuild = {
+                id: Date.now(),
+                name,
+                region,
+                leader,
+                slots: '4/4 (Officiel 🟢)',
+                contact
+            };
+
+            appData.squads.unshift(newGuild);
+            transactionsLedger.unshift({ 
+                id: txid, 
+                type: 'CRÉATION CLUB', 
+                amount: '3 000 GNF', 
+                user: `${name} (${leader})`, 
+                status: 'Vérifié (626483994) 🟢', 
+                time: "À l'instant" 
+            });
+
+            saveAppData();
+            renderSquads();
+            closeModal('modal-create-guild');
+
+            document.getElementById('guild-name').value = '';
+            document.getElementById('guild-region').value = '';
+            document.getElementById('guild-leader').value = '';
+            document.getElementById('guild-contact').value = '';
+            document.getElementById('guild-txid').value = '';
+
+            showToast("🛡️ Club officiel créé et ajouté avec succès !");
+        }
+
+        function filterCombos(cat) {
+            document.querySelectorAll('.combo-tab').forEach(btn => {
+                const active = btn.textContent.toLowerCase().includes(cat) || (cat === 'all' && btn.textContent === 'Tous');
+                btn.className = active ? 'combo-tab px-3 py-1.5 rounded-xl font-bold bg-ff-orange text-white shrink-0 transition' : 'combo-tab px-3 py-1.5 rounded-xl font-semibold bg-stone-900 border border-stone-800 text-stone-300 shrink-0 transition';
+            });
+            const container = document.getElementById('combos-list');
+            if (!container) return;
+            const filtered = cat === 'all' ? appData.combos : appData.combos.filter(c => c.category === cat);
+            container.innerHTML = filtered.map(c => `
+                <div class="bg-ff-card p-4 rounded-2xl border border-ff-border space-y-2.5 shadow-md">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-display font-extrabold text-sm text-white">${c.title}</h3>
+                        <span class="text-[10px] bg-amber-500/20 text-amber-400 px-2.5 py-0.5 rounded-full font-bold uppercase">${c.category}</span>
+                    </div>
+                    <p class="text-xs text-stone-400">${c.desc}</p>
+                    <div class="bg-stone-900 border border-stone-800 p-3 rounded-xl space-y-1.5 text-xs">
+                        <div class="text-stone-300 font-bold">⚡ Active : <span class="text-ff-orange font-normal">${c.active}</span></div>
+                        <div class="text-stone-300 font-bold">🛡️ Passives : <span class="text-stone-300 font-normal">${c.passives.join(' • ')}</span></div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderTournaments() {
+            const container = document.getElementById('tournaments-list');
+            if (!container) return;
+            container.innerHTML = appData.tournaments.map(t => `
+                <div class="bg-ff-card p-4 rounded-2xl border border-ff-border space-y-3 shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-ff-yellow font-extrabold uppercase">Cagnotte : ${t.prize}</span>
+                            <h3 class="font-display font-extrabold text-base text-white">${t.title}</h3>
+                        </div>
+                        <span class="text-[10px] bg-stone-900 border border-stone-800 px-2.5 py-1 rounded-xl text-amber-400 font-bold">Mise : ${t.fee}</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs text-stone-400">
+                            <span>Quota (Max 1 500)</span>
+                            <span class="font-bold text-white">${t.registeredCount} / ${t.maxPlayers}</span>
+                        </div>
+                        <div class="w-full bg-stone-900 h-2 rounded-full overflow-hidden border border-stone-800">
+                            <div class="bg-gradient-to-r from-ff-orange to-amber-500 h-full rounded-full" style="width: ${(t.registeredCount / t.maxPlayers) * 100}%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-1">
+                        <span class="text-xs font-semibold text-emerald-400">${t.status}</span>
+                        <div class="flex gap-2">
+                            <button onclick="openPaymentModal(${t.id})" class="px-3.5 py-2 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-white font-bold text-xs rounded-xl shadow">S'inscrire 💳</button>
+                            <button onclick="openChamber(${t.id})" class="px-3.5 py-2 bg-ff-orange hover:bg-ff-orange-hover text-white font-bold text-xs rounded-xl shadow">Chambre 🔑</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderDailyMatches() {
+            const container = document.getElementById('daily-matches-list');
+            if (!container) return;
+            container.innerHTML = appData.dailyMatches.map(m => `
+                <div class="bg-gradient-to-br ${m.posterBg} p-5 rounded-3xl border border-ff-border shadow-2xl space-y-4 relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 opacity-10 text-8xl font-black select-none pointer-events-none">🔥</div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] bg-black/40 backdrop-blur-md px-3 py-1 rounded-full text-amber-400 font-bold border border-white/10">🕒 ${m.time}</span>
+                        <span class="text-[10px] bg-emerald-500/20 backdrop-blur-md px-2.5 py-1 rounded-full text-emerald-300 font-bold border border-emerald-500/30">${m.status}</span>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-[10px] text-ff-orange font-extrabold uppercase tracking-widest">Affiche Officielle Guinée 🇬🇳</span>
+                        <h3 class="font-display font-extrabold text-lg text-white">${escapeHtml(m.title)}</h3>
+                    </div>
+                    <div class="bg-black/40 backdrop-blur-md p-3.5 rounded-2xl border border-white/10 flex items-center justify-between text-xs">
+                        <div class="font-bold text-white">⚔️ ${escapeHtml(m.teams)}</div>
+                        <div class="text-amber-400 font-extrabold">🏆 ${escapeHtml(m.prize)}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function openPaymentModal(id) {
+            activeTourneyId = id;
+            const t = appData.tournaments.find(x => x.id === id);
+            if (t) {
+                document.getElementById('pay-modal-title').innerText = t.title;
+                document.getElementById('pay-modal-amount').innerText = t.fee;
+            }
+            if (userProfile && userProfile.connected) {
+                const payIgn = document.getElementById('pay-ign');
+                if (payIgn) payIgn.value = userProfile.ign;
+            }
+            openModal('modal-payment');
+        }
+
+        function confirmTournamentPayment() {
+            const ign = document.getElementById('pay-ign').value.trim();
+            const txid = document.getElementById('pay-txid').value.trim();
+            if (!ign || !txid) { showToast("⚠️ Remplissez tous les champs."); return; }
+            if (transactionsLedger.some(tx => tx.id.toLowerCase() === txid.toLowerCase())) {
+                showToast("🚨 ID de transaction déjà utilisé !"); return;
+            }
+            const t = appData.tournaments.find(x => x.id === activeTourneyId);
+            if (t) {
+                if (!t.paidPlayers) t.paidPlayers = [];
+                if (!t.paidPlayers.includes(ign.toLowerCase())) {
+                    t.paidPlayers.push(ign.toLowerCase());
+                }
+                if (userProfile && userProfile.connected && !t.paidPlayers.includes(userProfile.ign.toLowerCase())) {
+                    t.paidPlayers.push(userProfile.ign.toLowerCase());
+                }
+                t.registeredCount = Math.min(t.maxPlayers, t.registeredCount + 1);
+                if (t.registeredCount >= t.maxPlayers) t.status = "Inscriptions fermées 🔴";
+            }
+            transactionsLedger.unshift({
+                id: txid,
+                type: 'TOURNOI',
+                amount: t ? t.fee : '50 000 GNF',
+                user: ign,
+                status: 'Vérifié (626483994) 🟢',
+                time: "À l'instant"
+            });
+            document.getElementById('pay-txid').value = '';
+            saveAppData();
+            closeModal('modal-payment');
+            renderTournaments();
+            showToast("✅ Paiement validé ! Accès au salon débloqué.");
+        }
+
+        function openChamber(id) {
+            const t = appData.tournaments.find(x => x.id === id);
+            if (!t) return;
+            const paidList = t.paidPlayers || [];
+            const currentIgn = (userProfile && userProfile.connected) ? userProfile.ign.toLowerCase() : '';
+            const hasPaid = isCreatorMode || (currentIgn && paidList.includes(currentIgn));
+
+            if (!hasPaid) {
+                showToast("🔒 Accès refusé : connectez votre compte et validez votre paiement sur le 626483994 !");
+                openPaymentModal(id);
+                return;
+            }
+
+            currentRoomData = { id: t.room.id, pass: t.room.pass };
+            document.getElementById('room-display-id').innerText = t.room.id;
+            document.getElementById('room-display-pass').innerText = t.room.pass;
+            openModal('modal-room');
+        }
+
+        function copyRoomInfo() {
+            const info = `SALON FREE FIRE GUINÉE\nID : ${currentRoomData.id}\nMot de passe : ${currentRoomData.pass}`;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = info;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(`🔑 Accès copiés ! (${currentRoomData.id})`);
+        }
+
+        function renderWinners() {
+            const winC = document.getElementById('winners-list');
+            const ledC = document.getElementById('transactions-ledger');
+            if (winC) {
+                winC.innerHTML = winnersStore.map(w => `
+                    <div class="bg-ff-card p-4 rounded-2xl border border-amber-500/30 space-y-2 shadow-lg">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] text-amber-400 font-extrabold uppercase">Vainqueur Certifié 🏆</span>
+                            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2.5 py-0.5 rounded font-bold">${w.status}</span>
+                        </div>
+                        <h3 class="font-display font-extrabold text-sm text-white">${escapeHtml(w.tourney)}</h3>
+                        <p class="text-xs text-stone-300">Squad : <span class="font-bold text-amber-300">${escapeHtml(w.squad)}</span> • Gain : <span class="font-bold text-white">${escapeHtml(w.amount)}</span></p>
+                    </div>
+                `).join('');
+            }
+            if (ledC) {
+                ledC.innerHTML = transactionsLedger.map(tx => `
+                    <div class="bg-stone-950 p-2.5 rounded-xl border border-stone-800 flex items-center justify-between text-xs">
+                        <div>
+                            <div class="font-bold text-white">${escapeHtml(tx.type)} • <span class="text-stone-400">${escapeHtml(tx.user)}</span></div>
+                            <div class="text-[10px] text-stone-500 font-mono">${escapeHtml(tx.id)} (${tx.time})</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-bold text-amber-400">${escapeHtml(tx.amount)}</div>
+                            <div class="text-[10px] text-emerald-400">${tx.status}</div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function handleDeclareWinner(e) {
+            e.preventDefault();
+            const tourney = document.getElementById('win-tourney').value.trim();
+            const squad = document.getElementById('win-squad').value.trim();
+            const amount = document.getElementById('win-amount').value.trim();
+            if (!tourney || !squad || !amount) return;
+            winnersStore.unshift({ id: Date.now(), tourney, squad, amount, status: 'Payé via 626483994 🟢' });
+            transactionsLedger.unshift({ id: 'TX-PAY-' + Math.floor(1000 + Math.random() * 9000), type: 'RETRAIT', amount, user: squad, status: 'Versé (626483994) 🟢', time: "À l'instant" });
+            saveAppData();
+            renderWinners();
+            document.getElementById('win-tourney').value = '';
+            document.getElementById('win-squad').value = '';
+            document.getElementById('win-amount').value = '';
+            showToast("🏆 Vainqueur déclaré et gain enregistré !");
+        }
+
+        function downloadAppFile() {
+            if (!isCreatorMode) {
+                showToast("⛔ Téléchargement du code réservé au Créateur !");
+                openModal('modal-creator-pin');
+                return;
+            }
+            const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'FireBot_Guinee.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast("📥 Fichier FireBot_Guinee.html téléchargé !");
+        }
+
+        function getValidPublicUrl() {
+            const customInput = document.getElementById('custom-share-url');
+            const typed = customInput ? customInput.value.trim() : '';
+            if (typed && (typed.startsWith('http://') || typed.startsWith('https://'))) {
+                return typed;
+            }
+            const current = window.location.href;
+            if (current && (current.startsWith('http://') || current.startsWith('https://'))) {
+                return current;
+            }
+            return '';
+        }
+
+        function updateShareTargetUrl(val) {
+            localStorage.setItem('firebot_custom_share_url', val.trim());
+            setupShareLinks();
+        }
+
+        function setupShareLinks() {
+            const customInput = document.getElementById('custom-share-url');
+            const savedUrl = localStorage.getItem('firebot_custom_share_url') || '';
+            if (customInput && !customInput.value && savedUrl) {
+                customInput.value = savedUrl;
+            }
+
+            const validUrl = getValidPublicUrl();
+            const baseText = "🔥 Rejoins FireBot Free Fire Guinée 🇬🇳 ! Tournois officiels, classement des meilleurs joueurs et création de clubs sur le 626483994 !";
+            const fullText = validUrl ? `${baseText}\n👉 ${validUrl}` : baseText;
+            const encodedText = encodeURIComponent(fullText);
+            const encodedUrl = encodeURIComponent(validUrl || 'https://freefire.garena.com');
+
+            const wa = document.getElementById('share-wa-link');
+            const fb = document.getElementById('share-fb-link');
+            const tg = document.getElementById('share-tg-link');
+            const xLink = document.getElementById('share-x-link');
+            const embedBox = document.getElementById('embed-iframe-code');
+
+            if (wa) wa.href = `https://api.whatsapp.com/send?text=${encodedText}`;
+            if (fb) fb.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedText}`;
+            if (tg) tg.href = `https://t.me/share/url?url=${encodedUrl}&text=${encodeURIComponent(baseText)}`;
+            if (xLink) xLink.href = `https://twitter.com/intent/tweet?text=${encodedText}`;
+            if (embedBox) {
+                const iframeSrc = validUrl || 'TON_LIEN_HEBERGE_ICI';
+                embedBox.value = `<iframe src="${iframeSrc}" width="100%" height="750" frameborder="0" style="border-radius:16px;" title="FireBot Free Fire Guinée"></iframe>`;
+            }
+        }
+
+        function nativeUniversalShare() {
+            const validUrl = getValidPublicUrl();
+            const baseText = '🔥 Rejoins FireBot Free Fire Guinée 🇬🇳 ! Tournois officiels, classement des meilleurs joueurs et création de clubs sur le 626483994 !';
+            const shareData = {
+                title: 'FireBot Free Fire Guinée 🇬🇳',
+                text: baseText
+            };
+            if (validUrl) {
+                shareData.url = validUrl;
+            }
+            if (navigator.share) {
+                navigator.share(shareData).catch(() => copyOfficialSiteLink());
+            } else {
+                copyOfficialSiteLink();
+            }
+        }
+
+        function copyEmbedCode() {
+            if (!isCreatorMode) {
+                showToast("⛔ Action réservée uniquement au Créateur !");
+                openModal('modal-creator-pin');
+                return;
+            }
+            const embedBox = document.getElementById('embed-iframe-code');
+            if (!embedBox) return;
+            embedBox.select();
+            document.execCommand('copy');
+            showToast("🌐 Code d'intégration site web copié !");
+        }
+
+        function copyOfficialSiteLink() {
+            const validUrl = getValidPublicUrl();
+            const baseText = '🔥 Rejoins FireBot Free Fire Guinée 🇬🇳 ! Tournois officiels, classement des meilleurs joueurs et création de clubs sur le 626483994 !';
+            const textToCopy = validUrl ? `${baseText}\n👉 ${validUrl}` : baseText;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast("📋 Message d'invitation copié ! Colle-le sur WhatsApp, TikTok ou Facebook.");
+        }
+
+        window.onload = function() {
+            loadAppData();
+            renderChat();
+            renderSquads();
+            renderDailyMatches();
+            filterCombos('all');
+            renderTournaments();
+            renderProfileCard();
+            renderLeaderboard();
+            setupShareLinks();
+            updateCreatorProtectionUI();
+
+            // Protection anti-copie du code source pour les visiteurs non-créateurs
+            document.addEventListener('contextmenu', function(e) {
+                if (!isCreatorMode) {
+                    e.preventDefault();
+                    showToast("🛡️ Code source protégé : réservé uniquement au Créateur.");
+                }
+            });
+            document.addEventListener('keydown', function(e) {
+                if (!isCreatorMode) {
+                    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'J', 'C', 'i', 'j', 'c'].includes(e.key)) || (e.ctrlKey && ['u', 'U', 's', 'S'].includes(e.key))) {
+                        e.preventDefault();
+                        showToast("🛡️ Inspection et copie du code bloquées (Créateur uniquement).");
+                    }
+                }
+            });
+        };
+    </script>
+</body>
+</html>
+```
